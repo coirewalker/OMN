@@ -1,0 +1,45 @@
+h1, h2, h3, h4, h5, p, a {
+  color: #fff; }
+
+body {
+  background-color: #000; }
+
+.section-container {
+  padding-top: 60px;
+  padding-bottom: 25px;
+  text-align: center;
+  background: url(/media/broken-noise.png);
+  background-color: #000; }
+
+.video-wrapper {
+  position: relative;
+  height: 100vh; }
+
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -10;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  background: url(/media/bg-vid-img.png) no-repeat;
+  background-size: cover; }
+
+@media screen and (max-device-width: 800px) {
+  html {
+    background: url(/media/bg-vid-img.png) #000 no-repeat center center fixed; }
+
+  #bgvid {
+    display: none; } }
+.hero {
+  color: #fff;
+  text-align: center;
+  padding-top: 70vh; }
+
+/*# sourceMappingURL=main.css.map */

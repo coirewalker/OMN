@@ -1,0 +1,14 @@
+h1, h2, h3, h4, h5, p, a {
+  color: #fff; }
+
+body {
+  background-color: #000; }
+
+.section-container {
+  padding-top: 60px;
+  padding-bottom: 25px;
+  text-align: center;
+  background: url(/media/broken-noise.png);
+  background-color: #000; }
+
+/*# sourceMappingURL=base.css.map */

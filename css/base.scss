@@ -1,0 +1,29 @@
+// FONTS 
+$font-color-light: #fff;
+$bg-color-dark: #000;
+
+h1, h2, h3, h4, h5, p, a {
+	color: $font-color-light;
+}
+
+
+
+@mixin translate($percent) {
+    -ms-transform: translateX($percent) translateY($percent);
+    -moz-transform: translateX($percent) translateY($percent);
+    transform: translateX($percent) translateY($percent);
+    -webkit-transform: translateX($percent) translateY($percent);
+}
+
+body {
+	background-color: $bg-color-dark;
+}
+
+
+.section-container {
+	padding-top: 60px;
+	padding-bottom: 25px;
+	text-align: center;
+	background: url(/media/broken-noise.png);
+	background-color: $bg-color-dark;
+}

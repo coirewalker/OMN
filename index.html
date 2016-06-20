@@ -3,35 +3,76 @@
 <head>
   	<meta charset="UTF-8">
   	<title>OneMicNite</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<link type="image/x-icon" href="/media/mic-logo-clear.png" rel="shortcut icon"> 
 	<link rel="stylesheet" href="/css/vendor/normalize.css">
-	<link rel="stylesheet" href="/css/vendor/normalize.css">
-	<link rel="stylesheet" href="/css/vendor/bs-css/bootstrap-theme.css">
 	<link rel="stylesheet" href="/css/vendor/bs-css/bootstrap.css">
+	<link rel="stylesheet" href="/css/vendor/bs-css/bootstrap-theme.css">
 	<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+	<link rel="stylesheet" href="/css/vendor/bs-css/bootstrap-image-gallery.min.css">
 	<link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-	<div class="video-wrapper">
-		<video autoplay loop poster="/media/bg-vid-img.png" id="bgvid">
-		    <source src="/media/bg-vid.webm" type="video/webm">
-		    <source src="/media/bg-vid.mp4" type="video/mp4">
-		</video>
-		<div class="hero col-lg-12">
-			<h1>OneMicNite</h1>
-    		<h3>NYC's premier artist showcase & open mic jam</h3>
+		
+	<!-- NAVIGATION -->
+	<div class="col-sm-8 col-xsm-offset-2 col-md-8 col-md-offset-2">
+		<div class="mobilenav"> 
+			<li><a href="#home"><img class="logo-nav" src="/media/mic-logo-clear.png" alt="logo"></a></li>
+			<li><a href="#about">About</a></li> 
+			<li><a href="#info">Info</a></li> 
+			<li><a href="#gallery">Gallery</a></li> 
+			<li><a href="#contact">Contact</a></li> 
+		</div> 
+
+		<a href="javascript:void(0)" class="ham-icon"> 
+			<div class="hamburger"> 
+				<div class="menui top-menu"></div> 
+				<div class="menui mid-menu"></div> 
+				<div class="menui bottom-menu"></div> 
+			</div> 
+		</a>
+	</div>
+
+	<div class="mobile-bg">
+		<div class="video-wrapper" id="home">
+			<video autoplay loop poster="/media/bg-vid-img.png" id="bgvid">
+			    <source src="/media/bg-vid.webm" type="video/webm">
+			    <source src="/media/bg-vid.mp4" type="video/mp4">
+			</video>
+			<div class="hero col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
+				<img class="logo-hero" src="/media/mic-logo-clear.png" alt="logo">
+				<h1>OneMicNite</h1>
+	    		<h3>NYC's premier artist showcase & open mic jam</h3>
+			</div>
 		</div>
 	</div>
-	<div id="about" class="col-lg-12 section-container">	
-		<h2>About</h2>
-		<p>Founded by award-winning Host and Creator, Marcos Luis, OneMicNite has become a cornerstone within the heart of the New York City's performance art culture. As an Artist who has a knack for assembling the most explosive and dynamic shows, Marcos is a creative force to be reckoned with, and the energy at OneMicNite is proof. 
-		</p>
-		<p>At OneMicNight, you cannot be innovative without bringing change, and change is brought about by creativity, sharing, showing and learning--that's what the artists of OneMicNite bring to the stage.  With a combination of amateurs, Grammy Award-winning veterans, and international performers, OneMicNite's featured acts showcase New York City's best up-and-coming artists of music, poetry, and performance art.  With hundreds of Shows, OneMicNight has been responsible for jumpstarting the careers of numerous popular Indie solo artists and bands in NYC, giving artists exposure with live recording, and live artist interviews on <a href="#">OneMicNiteTv</a>.
-		</p>
-		<p>Since it's beginnings in 2007, OneMicNite made a commitment to give back to the local community through contributions to A Drive For Life, Speaking In Rhythms, Womens Prison Association, The AIDS Walk NYC, and The Breast Cancer Walk.  At OneMicNite, we bring together artists to perform, raise money, and donate their talent for a cause--join us for the best 'Nite' around! 
-		</p> 
+
+	<!-- ABOUT -->
+	<div id="about" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12 section-container skew-right">	
+		<div class="anti-skew-right">
+			<h2>About</h2>
+			<p>Founded by award-winning Host and Creator, Marcos Luis, OneMicNite has become a cornerstone within the heart of the New York City's performance art culture. As an Artist who has a knack for assembling the most explosive and dynamic shows, Marcos is a creative force to be reckoned with, and the energy at OneMicNite is proof. 
+			</p>
+			<p>At OneMicNight, you cannot be innovative without bringing change, and change is brought about by creativity, sharing, showing and learning--that's what the artists of OneMicNite bring to the stage.  With a combination of amateurs, Grammy Award-winning veterans, and international performers, OneMicNite's featured acts showcase New York City's best up-and-coming artists of music, poetry, and performance art.  With hundreds of Shows, OneMicNight has been responsible for jumpstarting the careers of numerous popular Indie solo artists and bands in NYC, giving artists exposure with live recording, and live artist interviews on <a href="#">OneMicNiteTv</a>.
+			</p>
+			<p>Since it's beginnings in 2007, OneMicNite made a commitment to give back to the local community through contributions to A Drive For Life, Speaking In Rhythms, Womens Prison Association, The AIDS Walk NYC, and The Breast Cancer Walk.  At OneMicNite, we bring together artists to perform, raise money, and donate their talent for a cause--join us for the best 'Nite' around! 
+			</p> 
+		</div>
 	</div>
-	<div id="info" class="col-lg-12 section-container">
+
+	<!-- INFO -->
+	<div id="info" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12 section-container">
+
+		<div id="space">
+		  <div class="stars"></div>
+		  <div class="stars"></div>
+		  <div class="stars"></div>
+		  <div class="stars"></div>
+		  <div class="stars"></div>
+		  <div class="stars"></div>
+		  <div class="stars"></div>
+		</div>
+
 		<h3>General Info</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iure voluptate sunt veniam, reiciendis velit veritatis neque quas explicabo in nesciunt a alias ipsam accusantium, adipisci at error? Neque, corrupti.
 		</p>
@@ -39,12 +80,121 @@
 		</p>
 	</div>
 
+    <!-- GALLERY -->
+	<div id="blueimp-gallery" class="blueimp-gallery gallery-bg" data-use-bootstrap-modal="false">
+	    <!-- The container for the modal slides -->
+	    <div class="slides"></div>
+	    <!-- Controls for the borderless lightbox -->
+	    <h3 class="title"></h3>
+	    <a class="prev">‹</a>
+	    <a class="next">›</a>
+	    <a class="close">×</a>
+	    <a class="play-pause"></a>
+	    <ol class="indicator"></ol>
+	    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+	    <div class="modal fade">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" aria-hidden="true">&times;</button>
+	                    <h4 class="modal-title"></h4>
+	                </div>
+	                <div class="modal-body next"></div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default pull-left prev">
+	                        <i class="glyphicon glyphicon-chevron-left"></i>
+	                        Previous
+	                    </button>
+	                    <button type="button" class="btn btn-primary next">
+	                        Next
+	                        <i class="glyphicon glyphicon-chevron-right"></i>
+	                    </button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
 
-	<script type="text/javascript" src="/js/vendor/jquery-1.12.2.min.js"></script>
-	<script type="text/javascript" src="/js/vendor/bs-js/bootstrap.js"></script>
+	<div id="gallery" class="section-container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12 skew-left">
+		<div class="gallery-bg anti-skew-left">
+			<h2>Gallery</h2>
+		   	<a href="/media/gallery/me-charlie.jpg" title="charlie!" data-gallery>
+		        <img src="/media/gallery/me-charlie-thumb.jpg" alt="charlie">
+		    </a>
+		    <a href="/media/gallery/sofia.jpg" title="sofia!" data-gallery>
+		        <img src="/media/gallery/sofia-thumb.jpg" alt="sofia">
+		    </a>
+		    <a href="/media/gallery/jacob.jpg" title="jacob!" data-gallery>
+		        <img src="/media/gallery/jacob-thumb.jpg" alt="jacob">
+		    </a>
+		   	<a href="/media/gallery/supercollider.jpg" title="supercollider" data-gallery>
+		        <img src="/media/gallery/supercollider-thumb.jpg" alt="supercollider">
+		    </a>
+		    <a href="/media/gallery/cheryls.jpg" title="cheryl's w ruckus" data-gallery>
+		        <img src="/media/gallery/cheryls-thumb.jpg" alt="cheryls">
+		    </a>
+		    <a href="/media/gallery/eventide.jpg" title="work obstruction" data-gallery>
+		        <img src="/media/gallery/eventide-thumb.jpg" alt="work obstruction">
+		    </a>
+		   	<a href="/media/gallery/cl-main.jpg" title="jamming" data-gallery>
+		        <img src="/media/gallery/cl-main-thumb.jpg" alt="jamming">
+		    </a>
+		    <a href="/media/gallery/old-studio.jpg" title="the studio" data-gallery>
+		        <img src="/media/gallery/old-studio-thumb.jpg" alt="studio">
+		    </a>
+		   	<a href="/media/gallery/strat.jpg" title="gear" data-gallery>
+		        <img src="/media/gallery/strat-thumb.jpg" alt="strat">
+		    </a>
+	   	</div>
+	</div>
+	<!-- END GALLERY -->
+
+	<!-- CONTACT -->
+	<div id="contact" class="section-container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
+		<img class="logo" src="/media/mic-logo-clear.png" alt="logo">
+		<h2>Contact</h2>
+		<div class="contact-info-container">
+			<p>Tuesday evenings, 7pm at:</p>
+			<h3>Cheryl's Global Soul</h3>
+	        <h4>236 Underhill Avenue, Brooklyn , NY 11238</h4>
+	    </div>
+	</div>
+
+	<!-- GOOGLE MAP -->
+	<div id="map"></div>
+
+    <footer class="section-container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
+    	<div class="social-container">
+    		<p>follow OneMicNite for updates</p>
+    		<ul>
+	        	<li>
+	                <a href="https://www.facebook.com/walkerguitar" target="_blank" class="social-icon"><i class="fa fa-facebook-square fa-2x"></i></a>
+	            </li>
+	            <li>
+	                <a href="https://twitter.com/walkermusick" target="_blank" class="social-icon"><i class="fa fa-twitter-square fa-2x"></i></a>
+	            </li>
+	             <li>
+	                <a href="https://soundcloud.com/coirewalker" target="_blank" class="social-icon"><i class="fa fa-soundcloud fa-2x"></i></a>
+	            </li>
+	            <li>
+	                <a href="https://www.youtube.com/channel/UCZuuCQaPf2TnIveiEesAM6g" target="_blank" class="social-icon"><i class="fa fa-youtube-square fa-2x"></i></a>
+	            </li>
+	             <li>
+	                <a href="https://www.instagram.com/coirewalkermusic/" target="_blank" class="social-icon"><i class="fa fa-instagram fa-2x"></i></a>
+	            </li>
+	        </ul>
+    	</div>
+    </footer>
+
+    <script src="/js/vendor/jquery-1.12.2.min.js"></script>
+    <script src="/js/vendor/bs-js/bootstrap.min.js"></script>
 	<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-	<script src="js/bootstrap-image-gallery.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>          
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+	<script src="/js/vendor/bs-js/bootstrap-image-gallery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA"></script>
+    <script type="text/javascript" src="/js/maps.js"></script>   
+    <script type="text/javascript" src="/js/main.js"></script>
+
+
+
 </body>
 </html>

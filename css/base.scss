@@ -1,29 +1,83 @@
 // FONTS 
 $font-color-light: #fff;
-$bg-color-dark: #000;
+$font-color-dark: #64110A;
+
+$border-color-light: #fff;
+$border-color-dark: #64110A;
+
+$bg-color-brown: #64110A;
+$bg-color-tan: #d9b377;
+$bg-color-red: #a92424;
+$bg-color-olive: #c0ba35;
+$bg-color-orange: #f0a022;
 
 h1, h2, h3, h4, h5, p, a {
-	color: $font-color-light;
+	color: $font-color-dark;
 }
 
-
-
-@mixin translate($percent) {
-    -ms-transform: translateX($percent) translateY($percent);
-    -moz-transform: translateX($percent) translateY($percent);
-    transform: translateX($percent) translateY($percent);
-    -webkit-transform: translateX($percent) translateY($percent);
+h2 {
+	margin-top: 0;
 }
 
 body {
-	background-color: $bg-color-dark;
+	background-color: $bg-color-tan;
 }
 
+
+
+
+// MIXINS
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+
+
+// CONTAINER
+.logo-border-light {
+	@include border-radius(50%);
+	border: solid $border-color-light;
+}
+
+.logo-border-dark {
+	@include border-radius(50%);
+	border: solid $border-color-dark;
+}
 
 .section-container {
-	padding-top: 60px;
-	padding-bottom: 25px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 	text-align: center;
-	background: url(/media/broken-noise.png);
-	background-color: $bg-color-dark;
+	// background: url(/media/broken-noise.png);
+	background-color: $bg-color-tan;
 }
+
+
+.skew-right {
+	transform: skewY(-3deg);
+	transform-origin: 100% 0;
+}
+
+.anti-skew-right {
+	transform: skewY(3deg);
+	transform-origin: 100% 0;
+}
+
+.skew-left {
+	transform: skewY(3deg);
+	transform-origin: 100% 0;
+}
+
+.anti-skew-left {
+	transform: skewY(-3deg);
+	transform-origin: 100% 0;
+}
+
+
+
+

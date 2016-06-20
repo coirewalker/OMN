@@ -12,21 +12,140 @@ video#bgvid {
     width: auto;
     height: auto;
     z-index: -10;
-	@include translate(-50%);
+	    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
     background: url(/media/bg-vid-img.png) no-repeat;
     background-size: cover; 
 }
-@media screen and (max-device-width: 800px) {
-    html {
-         background: url(/media/bg-vid-img.png) #000 no-repeat center center fixed;
-    }
-    #bgvid {
+
+@media screen and (max-device-width: 768px) {
+    .mobile-bg {
+	    background: url(/media/mobile-bg.jpg) no-repeat;
+	    height: 100vh;
+	    background-position: center center;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+	}
+	video#bgvid {
         display: none;
     }
 }
 
 .hero {
-	color: $font-color-light;
-	text-align: center;
-	padding-top: 70vh;	
+	padding-top: 60vh;
+	text-align: center;	
+	h1, h3 {
+		color: $font-color-light;
+	}
+	.logo-hero {
+		width: 100px;
+		height: 100px;
+		@extend .logo-border-light;
+	}
 }
+
+
+
+
+
+
+// NAV 
+.logo-nav {
+	width: 80px;
+	height: 80px;
+	@extend .logo-border-dark;
+}
+
+
+
+
+
+// ABOUT 
+#about.section-container {
+	border-top: 3px solid $border-color-dark;
+	background-color: $bg-color-orange;
+}
+
+
+
+
+
+// INFO 
+#info.section-container {
+	background-color: $bg-color-olive;
+	border-top: 3px solid $border-color-dark;
+}
+
+
+
+
+
+// GALLERY
+#gallery.section-container {
+	background-color: $bg-color-red;
+	border-top: 3px solid $border-color-dark;
+	margin-bottom: -80px;
+	padding-bottom: 120px;
+	z-index: 1;
+}
+
+
+
+
+// CONTACT 
+
+
+.logo {
+	width: 80px;
+	height: 80px;
+	@extend .logo-border-light;
+}
+
+
+
+
+
+// MAP 
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+@media(max-width: 768px) {
+    #map {
+        height: 250px;
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+// FOOTER
+footer {
+	.social-container {
+		background-color: $bg-color-brown;
+		ul {
+			padding-left: 0;
+		}
+		li {
+			display: inline-block;
+			list-style: none;
+			padding: 0 5px;
+		}
+		a, p {
+			color: $font-color-light;
+		}
+	}
+}
+footer.section-container {
+	background-color: $bg-color-brown;
+}
+
+
+

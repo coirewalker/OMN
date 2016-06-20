@@ -1,14 +1,46 @@
 h1, h2, h3, h4, h5, p, a {
-  color: #fff; }
+  color: #64110A; }
+
+h2 {
+  margin-top: 0; }
 
 body {
-  background-color: #000; }
+  background-color: #d9b377; }
+
+.logo-border-light {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  border: solid #fff; }
+
+.logo-border-dark {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  border: solid #64110A; }
 
 .section-container {
-  padding-top: 60px;
-  padding-bottom: 25px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
-  background: url(/media/broken-noise.png);
-  background-color: #000; }
+  background-color: #d9b377; }
+
+.skew-right {
+  transform: skewY(-3deg);
+  transform-origin: 100% 0; }
+
+.anti-skew-right {
+  transform: skewY(3deg);
+  transform-origin: 100% 0; }
+
+.skew-left {
+  transform: skewY(3deg);
+  transform-origin: 100% 0; }
+
+.anti-skew-left {
+  transform: skewY(-3deg);
+  transform-origin: 100% 0; }
 
 /*# sourceMappingURL=base.css.map */

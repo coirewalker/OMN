@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$font-color-light".
-        on line 42 of css/index.scss
+        on line 44 of css/index.scss
 
-37: 
-38: .hero {
-39: 	padding-top: 60vh;
-40: 	text-align: center;	
-41: 	h1, h3 {
-42: 		color: $font-color-light;
-43: 	}
-44: 	.logo-hero {
-45: 		width: 100px;
-46: 		height: 100px;
-47: 		@extend .logo-border-light;
+39: 
+40: .hero {
+41: 	padding-top: 50vh;
+42: 	text-align: center;	
+43: 	h1, h3 {
+44: 		color: $font-color-light;
+45: 	}
+46: 	.logo-hero {
+47: 		width: 100px;
+48: 		height: 100px;
+49: 		@extend .logo-border-light;
 
 Backtrace:
-css/index.scss:42
+css/index.scss:44
 /Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -79,4 +79,4 @@ css/index.scss:42
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$font-color-light\".\A         on line 42 of css/index.scss\A \A 37: \A 38: .hero {\A 39: 	padding-top: 60vh;\A 40: 	text-align: center;	\A 41: 	h1, h3 {\A 42: 		color: $font-color-light;\A 43: 	}\A 44: 	.logo-hero {\A 45: 		width: 100px;\A 46: 		height: 100px;\A 47: 		@extend .logo-border-light;"; }
+  content: "Error: Undefined variable: \"$font-color-light\".\A         on line 44 of css/index.scss\A \A 39: \A 40: .hero {\A 41: 	padding-top: 50vh;\A 42: 	text-align: center;	\A 43: 	h1, h3 {\A 44: 		color: $font-color-light;\A 45: 	}\A 46: 	.logo-hero {\A 47: 		width: 100px;\A 48: 		height: 100px;\A 49: 		@extend .logo-border-light;"; }

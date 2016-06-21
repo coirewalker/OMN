@@ -3,40 +3,42 @@
     height: 100vh;
 }
 
-video#bgvid { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -10;
-	    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(/media/bg-vid-img.png) no-repeat;
-    background-size: cover; 
-}
+// video#bgvid { 
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     min-width: 100%;
+//     min-height: 100%;
+//     width: auto;
+//     height: auto;
+//     z-index: -10;
+// 	    -ms-transform: translateX(-50%) translateY(-50%);
+//     -moz-transform: translateX(-50%) translateY(-50%);
+//     -webkit-transform: translateX(-50%) translateY(-50%);
+//     transform: translateX(-50%) translateY(-50%);
+//     background: url(/media/bg-vid-img.png) no-repeat;
+//     background-size: cover; 
+// }
 
-@media screen and (max-device-width: 768px) {
-    .mobile-bg {
+// @media screen and (max-device-width: 768px) {
+    .video-wrapper {
+    	position: relative;
 	    background: url(/media/bg-mobile-1.jpg) no-repeat;
-	    height: 100vh;
+	    height: 110vh;
 	    background-position: center top;
 	    -webkit-background-size: cover;
 	    -moz-background-size: cover;
 	    background-size: cover;
 	    -o-background-size: cover;
+	    margin-bottom: -5%;
 	}
-	video#bgvid {
-        display: none;
-    }
-}
+// 	video#bgvid {
+//         display: none;
+//     }
+// }
 
 .hero {
-	padding-top: 60vh;
+	padding-top: 50vh;
 	text-align: center;	
 	h1, h3 {
 		color: $font-color-light;
@@ -47,7 +49,11 @@ video#bgvid {
 		@extend .logo-border-light;
 	}
 }
-
+@media screen and (max-device-width: 736px) {
+	.hero {
+		padding-top: 40vh;
+	}
+}
 
 
 
@@ -55,9 +61,9 @@ video#bgvid {
 
 // NAV 
 .logo-nav {
-	width: 80px;
-	height: 80px;
-	@extend .logo-border-dark;
+	width: 120px;
+	height: 120px;
+	@extend .logo-border-light;
 }
 
 
@@ -85,7 +91,6 @@ video#bgvid {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;	
-	background-color: $color-black;
 	border-top: 3px solid $bg-color-light-blue;
 }
 
@@ -100,8 +105,12 @@ video#bgvid {
 	z-index: 1;
 	border-top: 3px solid $color-white;
 	border-bottom: 3px solid $color-white;
-	background: url(/media/broken-noise.png) repeat;
-	background-color: $color-black;
+	background: url(/media/bg-mobile-2.jpg) repeat;
+		background-position: center bottom;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;	
 }
 
 
@@ -109,8 +118,8 @@ video#bgvid {
 
 // CONTACT 
 #contact.section-container {
-	background: url(/media/broken-noise.png) repeat;	
-	background-color: $bg-color-dark-gray;
+	// background: url(/media/broken-noise.png) repeat;	
+	background-color: $color-black;
 	border-bottom: 3px solid $color-black;	
 	border-top: 3px solid $color-white;	
 	z-index: 2;
@@ -127,7 +136,7 @@ video#bgvid {
 		padding: 0 3px;
 	}
 	a, p {
-		color: $font-color-light;
+		color: $color-white;
 	}
 }
 

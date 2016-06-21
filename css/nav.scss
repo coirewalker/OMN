@@ -4,7 +4,7 @@
 }
 
 .top-animate {
-	background: $font-color-dark !important;
+	background: $color-white !important;
 	top: 13px !important;
 	-webkit-transform: rotate(45deg);
 	/* Chrome, Safari, Opera */
@@ -14,7 +14,7 @@
 .mid-animate { opacity: 0; }
 
 .bottom-animate {
-	background: $font-color-dark !important;
+	background: $color-white !important;
 	top: 13px !important;
 	-webkit-transform: rotate(-225deg);
 	/* Chrome, Safari, Opera */
@@ -65,7 +65,7 @@
 }
 
 .menui {
-	background: $font-color-light;
+	background: $color-white;
 	transition: 0.5s ease;
 	transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
 	margin-top: 10px;
@@ -94,11 +94,12 @@
 }
 
 // iPod landscape
-@media (min-width: 769px) {
+@media screen and (min-device-width: 769px) {
 	.ham-icon {
 		display: none;
 	}
 }
+
 
 .mobilenav {
 	font-family: inherit;
@@ -109,7 +110,7 @@
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background: rgba(255,255,255, 0.9);
+	background: rgba(253, 168, 121, 0.9);
 	opacity: 1;
 }
 
@@ -121,7 +122,7 @@
 
 .mobilenav li a {
 	font-size: 150%;
-	color: $font-color-dark;
+	color: $color-white;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 700;

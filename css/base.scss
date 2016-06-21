@@ -23,9 +23,17 @@ h1, h2, h3, h4, h5, p, a {
 	color: $color-white;
 }
 
-h1, h2, h3 {
-	font-family: 'Playfair Display', serif;
+h1, h2, h3, h4, h5, .mobilenav li a {
+	font-family: 'Orbitron', sans-serif;
 	font-weight: 700;
+}
+
+.mobilenav li a {
+	color: $color-white;
+}
+
+p {
+	font-family: 'Playfair Display', serif;
 }
 
 h2 {
@@ -54,20 +62,23 @@ body {
 // CONTAINER
 .logo-border-light {
 	@include border-radius(50%);
-	border: solid $border-color-light;
+	border: solid 3px $border-color-light;
 }
 
 .logo-border-dark {
 	@include border-radius(50%);
-	border: solid $border-color-dark;
+	border: solid 3px $border-color-dark;
 }
 
 .section-container {
 	padding-top: 50px;
 	padding-bottom: 80px;
 	text-align: center;
-	// background: url(/media/broken-noise.png);
-	background-color: $bg-color-tan;
+	background-color: $color-black;
+}
+
+.section-container--x-top-pad {
+	padding-top: 90px;
 }
 
 

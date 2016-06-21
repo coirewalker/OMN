@@ -1,9 +1,15 @@
 h1, h2, h3, h4, h5, p, a {
   color: #fff; }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+h1, h2, h3, h4, h5, .mobilenav li a {
+  font-family: 'Orbitron', sans-serif;
   font-weight: 700; }
+
+.mobilenav li a {
+  color: #fff; }
+
+p {
+  font-family: 'Playfair Display', serif; }
 
 h2 {
   margin-top: 0; }
@@ -16,20 +22,23 @@ body {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  border: solid #fff; }
+  border: solid 3px #fff; }
 
 .logo-border-dark {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  border: solid #64110A; }
+  border: solid 3px #64110A; }
 
 .section-container {
   padding-top: 50px;
   padding-bottom: 80px;
   text-align: center;
-  background-color: #d9b377; }
+  background-color: #000; }
+
+.section-container--x-top-pad {
+  padding-top: 90px; }
 
 .skew-right {
   transform: skewY(-3deg);

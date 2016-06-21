@@ -1,9 +1,15 @@
 h1, h2, h3, h4, h5, p, a {
   color: #fff; }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+h1, h2, h3, h4, h5, .mobilenav li a {
+  font-family: 'Orbitron', sans-serif;
   font-weight: 700; }
+
+.mobilenav li a {
+  color: #fff; }
+
+p {
+  font-family: 'Playfair Display', serif; }
 
 h2 {
   margin-top: 0; }
@@ -11,25 +17,28 @@ h2 {
 body {
   background-color: #000; }
 
-.logo-border-light, .hero .logo-hero, .logo {
+.logo-border-light, .hero .logo-hero, .logo-nav, .logo {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  border: solid #fff; }
+  border: solid 3px #fff; }
 
-.logo-border-dark, .logo-nav {
+.logo-border-dark {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  border: solid #64110A; }
+  border: solid 3px #64110A; }
 
 .section-container {
   padding-top: 50px;
   padding-bottom: 80px;
   text-align: center;
-  background-color: #d9b377; }
+  background-color: #000; }
+
+.section-container--x-top-pad {
+  padding-top: 90px; }
 
 .skew-right {
   transform: skewY(-3deg);
@@ -51,36 +60,19 @@ body {
   position: relative;
   height: 100vh; }
 
-video#bgvid {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -10;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: url(/media/bg-vid-img.png) no-repeat;
-  background-size: cover; }
+.video-wrapper {
+  position: relative;
+  background: url(/media/bg-mobile-1.jpg) no-repeat;
+  height: 110vh;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: -5%; }
 
-@media screen and (max-device-width: 768px) {
-  .mobile-bg {
-    background: url(/media/bg-mobile-1.jpg) no-repeat;
-    height: 100vh;
-    background-position: center top;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover; }
-
-  video#bgvid {
-    display: none; } }
 .hero {
-  padding-top: 60vh;
+  padding-top: 50vh;
   text-align: center; }
   .hero h1, .hero h3 {
     color: #fff; }
@@ -88,9 +80,12 @@ video#bgvid {
     width: 100px;
     height: 100px; }
 
+@media screen and (max-device-width: 736px) {
+  .hero {
+    padding-top: 40vh; } }
 .logo-nav {
-  width: 80px;
-  height: 80px; }
+  width: 120px;
+  height: 120px; }
 
 #about.section-container {
   border-top: 3px solid #fff;
@@ -105,7 +100,6 @@ video#bgvid {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-color: #000;
   border-top: 3px solid #d9edf7; }
 
 #gallery.section-container {
@@ -114,12 +108,15 @@ video#bgvid {
   z-index: 1;
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
-  background: url(/media/broken-noise.png) repeat;
-  background-color: #000; }
+  background: url(/media/bg-mobile-2.jpg) repeat;
+  background-position: center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
 
 #contact.section-container {
-  background: url(/media/broken-noise.png) repeat;
-  background-color: #666666;
+  background-color: #000;
   border-bottom: 3px solid #000;
   border-top: 3px solid #fff;
   z-index: 2; }
@@ -162,7 +159,7 @@ footer.footer-container {
   /* For some Androids */ }
 
 .top-animate {
-  background: #64110A !important;
+  background: #fff !important;
   top: 13px !important;
   -webkit-transform: rotate(45deg);
   /* Chrome, Safari, Opera */
@@ -172,7 +169,7 @@ footer.footer-container {
   opacity: 0; }
 
 .bottom-animate {
-  background: #64110A !important;
+  background: #fff !important;
   top: 13px !important;
   -webkit-transform: rotate(-225deg);
   /* Chrome, Safari, Opera */
@@ -238,7 +235,7 @@ footer.footer-container {
     right: 45px;
     height: 55px;
     width: 55px; } }
-@media (min-width: 769px) {
+@media screen and (min-device-width: 769px) {
   .ham-icon {
     display: none; } }
 .mobilenav {
@@ -250,7 +247,7 @@ footer.footer-container {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(253, 168, 121, 0.9);
   opacity: 1; }
 
 .mobilenav li {
@@ -260,7 +257,7 @@ footer.footer-container {
 
 .mobilenav li a {
   font-size: 150%;
-  color: #64110A;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;

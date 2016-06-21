@@ -1,11 +1,15 @@
 h1, h2, h3, h4, h5, p, a {
-  color: #64110A; }
+  color: #fff; }
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700; }
 
 h2 {
   margin-top: 0; }
 
 body {
-  background-color: #d9b377; }
+  background-color: #000; }
 
 .logo-border-light, .hero .logo-hero, .logo {
   -webkit-border-radius: 50%;
@@ -89,19 +93,47 @@ video#bgvid {
   height: 80px; }
 
 #about.section-container {
-  border-top: 3px solid #64110A;
-  background-color: #f0a022; }
+  border-top: 3px solid #d9edf7;
+  background: url(/media/sky-bg.jpg) repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
 
 #info.section-container {
-  background-color: #c0ba35;
-  border-top: 3px solid #64110A; }
+  background: url(/media/bg-noise.png) repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-color: #60d0d5;
+  border-top: 3px solid #d9edf7; }
 
 #gallery.section-container {
-  background-color: #a92424;
-  border-top: 3px solid #64110A;
   margin-bottom: -80px;
   padding-bottom: 120px;
-  z-index: 1; }
+  z-index: 1;
+  border-top: 6px solid #04023b;
+  border-bottom: 6px solid #04023b;
+  background: url(/media/bg-noise.png) repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-color: #f65a54; }
+
+#contact.section-container {
+  background: url(/media/bg-noise.png) repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-color: #fed649;
+  border-top: 3px solid #d9edf7; }
 
 .logo {
   width: 80px;

@@ -66,9 +66,15 @@ video#bgvid {
 
 // ABOUT 
 #about.section-container {
-	border-top: 3px solid $border-color-dark;
-	background-color: $bg-color-orange;
+	border-top: 3px solid $bg-color-light-blue;
+	background: url(/media/sky-bg.jpg) repeat;
+		background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;	
 }
+
 
 
 
@@ -76,8 +82,14 @@ video#bgvid {
 
 // INFO 
 #info.section-container {
-	background-color: $bg-color-olive;
-	border-top: 3px solid $border-color-dark;
+	background: url(/media/bg-noise.png) repeat;
+	    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;	
+	background-color: $bg-color-blue;
+	border-top: 3px solid $bg-color-light-blue;
 }
 
 
@@ -86,17 +98,37 @@ video#bgvid {
 
 // GALLERY
 #gallery.section-container {
-	background-color: $bg-color-red;
-	border-top: 3px solid $border-color-dark;
 	margin-bottom: -80px;
 	padding-bottom: 120px;
 	z-index: 1;
+	border-top: 6px solid $bg-color-dark-blue;
+	border-bottom: 6px solid $bg-color-dark-blue;
+	background: url(/media/bg-noise.png) repeat;
+		background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;	
+	background-color: $bg-color-red;
 }
 
 
 
 
 // CONTACT 
+#contact.section-container {
+	background: url(/media/bg-noise.png) repeat;
+	    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;	
+	background-color: $bg-color-yellow;
+	border-top: 3px solid $bg-color-light-blue;	
+}
+
+
+
 
 
 .logo {

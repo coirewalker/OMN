@@ -1,11 +1,15 @@
 h1, h2, h3, h4, h5, p, a {
-  color: #64110A; }
+  color: #fff; }
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700; }
 
 h2 {
   margin-top: 0; }
 
 body {
-  background-color: #d9b377; }
+  background-color: #000; }
 
 .logo-border-light {
   -webkit-border-radius: 50%;

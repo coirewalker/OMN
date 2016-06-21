@@ -1,18 +1,30 @@
 // FONTS 
 $font-color-light: #fff;
 $font-color-dark: #64110A;
+$color-black: #000;
+$color-white: #fff;
 
 $border-color-light: #fff;
 $border-color-dark: #64110A;
 
 $bg-color-brown: #64110A;
 $bg-color-tan: #d9b377;
-$bg-color-red: #a92424;
+$bg-color-red: #f65a54;
 $bg-color-olive: #c0ba35;
 $bg-color-orange: #f0a022;
 
+$bg-color-yellow: #fed649;
+$bg-color-blue: #60d0d5;
+$bg-color-light-blue: #d9edf7;
+$bg-color-dark-blue: #04023b;
+
 h1, h2, h3, h4, h5, p, a {
-	color: $font-color-dark;
+	color: $color-white;
+}
+
+h1, h2, h3 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
 }
 
 h2 {
@@ -20,7 +32,7 @@ h2 {
 }
 
 body {
-	background-color: $bg-color-tan;
+	background-color: $color-black;
 }
 
 

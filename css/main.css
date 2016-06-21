@@ -26,7 +26,7 @@ body {
   border: solid #64110A; }
 
 .section-container {
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 80px;
   text-align: center;
   background-color: #d9b377; }
@@ -69,9 +69,9 @@ video#bgvid {
 
 @media screen and (max-device-width: 768px) {
   .mobile-bg {
-    background: url(/media/mobile-bg.jpg) no-repeat;
+    background: url(/media/bg-mobile-1.jpg) no-repeat;
     height: 100vh;
-    background-position: center center;
+    background-position: center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -93,47 +93,47 @@ video#bgvid {
   height: 80px; }
 
 #about.section-container {
-  border-top: 3px solid #d9edf7;
-  background: url(/media/sky-bg.jpg) repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; }
+  border-top: 3px solid #fff;
+  background: url(/media/broken-noise.png) repeat;
+  background-color: #000;
+  background-position: center center; }
 
 #info.section-container {
-  background: url(/media/bg-noise.png) repeat;
-  background-position: center center;
+  background: url(/media/bg-mobile-2.jpg) repeat;
+  background-position: center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-color: #60d0d5;
+  background-color: #000;
   border-top: 3px solid #d9edf7; }
 
 #gallery.section-container {
   margin-bottom: -80px;
-  padding-bottom: 120px;
+  padding-bottom: 140px;
   z-index: 1;
-  border-top: 6px solid #04023b;
-  border-bottom: 6px solid #04023b;
-  background: url(/media/bg-noise.png) repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-color: #f65a54; }
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  background: url(/media/broken-noise.png) repeat;
+  background-color: #000; }
 
 #contact.section-container {
-  background: url(/media/bg-noise.png) repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-color: #fed649;
-  border-top: 3px solid #d9edf7; }
+  background: url(/media/broken-noise.png) repeat;
+  background-color: #666666;
+  border-bottom: 3px solid #000;
+  border-top: 3px solid #fff;
+  z-index: 2; }
+
+.social-container {
+  padding-top: 25px; }
+  .social-container ul {
+    padding-left: 0; }
+  .social-container li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 3px; }
+  .social-container a, .social-container p {
+    color: #fff; }
 
 .logo {
   width: 80px;
@@ -147,19 +147,14 @@ video#bgvid {
   #map {
     height: 250px;
     margin-top: 0; } }
-footer .social-container {
-  background-color: #64110A; }
-  footer .social-container ul {
-    padding-left: 0; }
-  footer .social-container li {
-    display: inline-block;
-    list-style: none;
-    padding: 0 5px; }
-  footer .social-container a, footer .social-container p {
-    color: #fff; }
+footer {
+  border-top: 3px solid #fff;
+  background: url(/media/broken-noise.png) repeat;
+  background-color: #000; }
 
-footer.section-container {
-  background-color: #64110A; }
+footer.footer-container {
+  padding: 25px 0;
+  text-align: center; }
 
 * {
   -webkit-tap-highlight-color: transparent;
@@ -289,64 +284,5 @@ footer.section-container {
     .mobilenav li:first-of-type {
       margin-top: 150px;
       margin-bottom: 20px; } }
-/* Stars 
-------------------------------------- */
-#space, .stars {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; }
-
-.stars {
-  background-image: radial-gradient(2px 2px at 20px 30px, #eee, transparent), radial-gradient(2px 2px at 40px 70px, #fff, transparent), radial-gradient(2px 2px at 50px 160px, #ddd, transparent), radial-gradient(2px 2px at 90px 40px, #fff, transparent), radial-gradient(2px 2px at 130px 80px, #fff, transparent), radial-gradient(2px 2px at 160px 120px, #ddd, transparent);
-  background-repeat: repeat;
-  background-size: 300px 300px;
-  animation: zoom 5s infinite;
-  opacity: 0; }
-
-.stars:nth-child(1) {
-  background-position: 50% 50%;
-  animation-delay: 0s; }
-
-.stars:nth-child(2) {
-  background-position: 20% 60%;
-  animation-delay: 1s; }
-
-.stars:nth-child(3) {
-  background-position: -20% -30%;
-  animation-delay: 2s; }
-
-.stars:nth-child(4) {
-  background-position: 40% -80%;
-  animation-delay: 3s; }
-
-.stars:nth-child(5) {
-  background-position: -20% 30%;
-  animation-delay: 4s; }
-
-.stars:nth-child(6) {
-  background-position: 20% 60%;
-  animation-delay: 5s; }
-
-.stars:nth-child(7) {
-  background-position: 50% 50%;
-  animation-delay: 6s; }
-
-@keyframes zoom {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-    animation-timing-function: ease-in; }
-  85% {
-    opacity: 1;
-    transform: scale(2.8);
-    animation-timing-function: linear; }
-  100% {
-    opacity: 0;
-    transform: scale(3.5); } }
-/* Demo syles 
-------------------------------------- */
 
 /*# sourceMappingURL=main.css.map */

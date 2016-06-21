@@ -17,6 +17,7 @@ $bg-color-yellow: #fed649;
 $bg-color-blue: #60d0d5;
 $bg-color-light-blue: #d9edf7;
 $bg-color-dark-blue: #04023b;
+$bg-color-dark-gray: #666666;
 
 h1, h2, h3, h4, h5, p, a {
 	color: $color-white;
@@ -62,7 +63,7 @@ body {
 }
 
 .section-container {
-	padding-top: 80px;
+	padding-top: 50px;
 	padding-bottom: 80px;
 	text-align: center;
 	// background: url(/media/broken-noise.png);

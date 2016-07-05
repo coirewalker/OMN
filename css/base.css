@@ -1,9 +1,17 @@
 h1, h2, h3, h4, h5, p, a {
   color: #fff; }
 
-h1, h2, h3, h4, h5, .mobilenav li a {
-  font-family: 'Orbitron', sans-serif;
+h1, h2 {
+  font-family: 'Orbitron', sans-serif; }
+
+h3, h4, h5, .mobilenav li a {
+  font-family: 'Playfair Display', serif; }
+
+h1, h2 {
   font-weight: 700; }
+
+h3, h4, h5 {
+  font-weight: 400; }
 
 .mobilenav li a {
   color: #fff; }
@@ -16,6 +24,10 @@ h2 {
 
 body {
   background-color: #000; }
+
+.col-sm-12 {
+  padding-left: 25px;
+  padding-right: 25px; }
 
 .logo-border-light {
   -webkit-border-radius: 50%;

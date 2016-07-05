@@ -1,59 +1,41 @@
-.video-wrapper {
+.home-bg {
 	position: relative;
-    height: 100vh;
+    background: url(/media/bg.jpg) no-repeat;
+    height: 105vh;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    //remove top margin
+    margin-top: -55px;
+    .hero {
+    	position: absolute;
+		bottom: 13%;
+		text-align: center;	
+		h1 {
+			font-size: 70px;
+			padding-bottom: 50px;
+		}
+		.logo-hero {
+			width: 200px;
+			height: 200px;
+			@extend .logo-border-light;
+		}
+	}
+    .lower-hero {
+   		h3{
+			font-size: 40px;
+		}
+	}
 }
 
-// video#bgvid { 
-//     position: fixed;
-//     top: 50%;
-//     left: 50%;
-//     min-width: 100%;
-//     min-height: 100%;
-//     width: auto;
-//     height: auto;
-//     z-index: -10;
-// 	    -ms-transform: translateX(-50%) translateY(-50%);
-//     -moz-transform: translateX(-50%) translateY(-50%);
-//     -webkit-transform: translateX(-50%) translateY(-50%);
-//     transform: translateX(-50%) translateY(-50%);
-//     background: url(/media/bg-vid-img.png) no-repeat;
-//     background-size: cover; 
+// @media screen and (max-device-width: 736px) {
 // }
 
-// @media screen and (max-device-width: 768px) {
-    .video-wrapper {
-    	position: relative;
-	    background: url(/media/bg-mobile-1.jpg) no-repeat;
-	    height: 110vh;
-	    background-position: center top;
-	    -webkit-background-size: cover;
-	    -moz-background-size: cover;
-	    background-size: cover;
-	    -o-background-size: cover;
-	    margin-bottom: -5%;
-	}
-// 	video#bgvid {
-//         display: none;
-//     }
-// }
 
-.hero {
-	padding-top: 50vh;
-	text-align: center;	
-	h1, h3 {
-		color: $font-color-light;
-	}
-	.logo-hero {
-		width: 100px;
-		height: 100px;
-		@extend .logo-border-light;
-	}
-}
-@media screen and (max-device-width: 736px) {
-	.hero {
-		padding-top: 40vh;
-	}
-}
+
+
 
 
 
@@ -71,27 +53,13 @@
 
 
 // ABOUT 
-#about.section-container {
-	border-top: 3px solid $color-white;
-	background: url(/media/broken-noise.png) repeat;
-	background-color: $color-black;
-	background-position: center center;
+#about {
+	z-index: -1;
 }
 
-
-
-
-
-
-// INFO 
-#info.section-container {
-	background: url(/media/bg-mobile-2.jpg) repeat;
-	background-position: center bottom;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;	
-	border-top: 3px solid $bg-color-light-blue;
+#about.section-container {
+	background: url(/media/broken-noise.png) repeat;
+	background-color: #08266a;
 }
 
 
@@ -103,14 +71,8 @@
 	margin-bottom: -80px;
 	padding-bottom: 140px;
 	z-index: 1;
-	border-top: 3px solid $color-white;
-	border-bottom: 3px solid $color-white;
-	background: url(/media/bg-mobile-2.jpg) repeat;
-		background-position: center bottom;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;	
+	background: url(/media/bg-noise.png) repeat;
+	background-color: #000;
 }
 
 
@@ -118,10 +80,19 @@
 
 // CONTACT 
 #contact.section-container {
-	// background: url(/media/broken-noise.png) repeat;	
-	background-color: $color-black;
-	border-bottom: 3px solid $color-black;	
-	border-top: 3px solid $color-white;	
+	// background: 
+ //    /* top, transparent red, faked with gradient */ 
+ //    linear-gradient(rgba(237, 242, 172, 0.25), 
+ //    rgba(5, 250, 136, 0.35)),  
+ //    /* bottom image bg */
+ //    url(/media/contact-bg.jpg) no-repeat;
+ //    background-position: center bottom;
+	// -webkit-background-size: cover;
+ //    -moz-background-size: cover;
+ //    background-size: cover;
+ //    -o-background-size: cover;
+ 	background: url(/media/bg-noise.png) repeat;
+	background-color: #307651;
 	z-index: 2;
 }
 
@@ -155,7 +126,7 @@
 // MAP 
 #map {
     width: 100%;
-    height: 300px;
+    height: 400px;
 }
 
 @media(max-width: 768px) {
@@ -172,13 +143,15 @@
 // FOOTER
 
 footer {
-	border-top: 3px solid $color-white;
 	background: url(/media/broken-noise.png) repeat;
 	background-color: $color-black;
 }
 
 footer.footer-container {
-	padding: 25px 0;
+	padding-top: 125px;
+	padding-bottom: 25px;
+	margin-top: -75px;
+	z-index: -1;
 	text-align: center;
 }
 

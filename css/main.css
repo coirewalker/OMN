@@ -1,9 +1,17 @@
 h1, h2, h3, h4, h5, p, a {
   color: #fff; }
 
-h1, h2, h3, h4, h5, .mobilenav li a {
-  font-family: 'Orbitron', sans-serif;
+h1, h2 {
+  font-family: 'Orbitron', sans-serif; }
+
+h3, h4, h5, .mobilenav li a {
+  font-family: 'Playfair Display', serif; }
+
+h1, h2 {
   font-weight: 700; }
+
+h3, h4, h5 {
+  font-weight: 400; }
 
 .mobilenav li a {
   color: #fff; }
@@ -17,7 +25,11 @@ h2 {
 body {
   background-color: #000; }
 
-.logo-border-light, .hero .logo-hero, .logo-nav, .logo {
+.col-sm-12 {
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.logo-border-light, .home-bg .hero .logo-hero, .logo-nav, .logo {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -56,69 +68,50 @@ body {
   transform: skewY(-3deg);
   transform-origin: 100% 0; }
 
-.video-wrapper {
+.home-bg {
   position: relative;
-  height: 100vh; }
-
-.video-wrapper {
-  position: relative;
-  background: url(/media/bg-mobile-1.jpg) no-repeat;
-  height: 110vh;
+  background: url(/media/bg.jpg) no-repeat;
+  height: 105vh;
   background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: -5%; }
+  margin-top: -55px; }
+  .home-bg .hero {
+    position: absolute;
+    bottom: 13%;
+    text-align: center; }
+    .home-bg .hero h1 {
+      font-size: 70px;
+      padding-bottom: 50px; }
+    .home-bg .hero .logo-hero {
+      width: 200px;
+      height: 200px; }
+  .home-bg .lower-hero h3 {
+    font-size: 40px; }
 
-.hero {
-  padding-top: 50vh;
-  text-align: center; }
-  .hero h1, .hero h3 {
-    color: #fff; }
-  .hero .logo-hero {
-    width: 100px;
-    height: 100px; }
-
-@media screen and (max-device-width: 736px) {
-  .hero {
-    padding-top: 40vh; } }
 .logo-nav {
   width: 120px;
   height: 120px; }
 
-#about.section-container {
-  border-top: 3px solid #fff;
-  background: url(/media/broken-noise.png) repeat;
-  background-color: #000;
-  background-position: center center; }
+#about {
+  z-index: -1; }
 
-#info.section-container {
-  background: url(/media/bg-mobile-2.jpg) repeat;
-  background-position: center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  border-top: 3px solid #d9edf7; }
+#about.section-container {
+  background: url(/media/broken-noise.png) repeat;
+  background-color: #08266a; }
 
 #gallery.section-container {
   margin-bottom: -80px;
   padding-bottom: 140px;
   z-index: 1;
-  border-top: 3px solid #fff;
-  border-bottom: 3px solid #fff;
-  background: url(/media/bg-mobile-2.jpg) repeat;
-  background-position: center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; }
+  background: url(/media/bg-noise.png) repeat;
+  background-color: #000; }
 
 #contact.section-container {
-  background-color: #000;
-  border-bottom: 3px solid #000;
-  border-top: 3px solid #fff;
+  background: url(/media/bg-noise.png) repeat;
+  background-color: #307651;
   z-index: 2; }
 
 .social-container {
@@ -138,19 +131,21 @@ body {
 
 #map {
   width: 100%;
-  height: 300px; }
+  height: 400px; }
 
 @media (max-width: 768px) {
   #map {
     height: 250px;
     margin-top: 0; } }
 footer {
-  border-top: 3px solid #fff;
   background: url(/media/broken-noise.png) repeat;
   background-color: #000; }
 
 footer.footer-container {
-  padding: 25px 0;
+  padding-top: 125px;
+  padding-bottom: 25px;
+  margin-top: -75px;
+  z-index: -1;
   text-align: center; }
 
 * {

@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="/css/vendor/bs-css/bootstrap-theme.css">
 	<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 	<link rel="stylesheet" href="/css/vendor/bs-css/bootstrap-image-gallery.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Orbitron:400,900,700,500' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/css/main.css">
 </head>
@@ -21,7 +21,7 @@
 		<div class="mobilenav"> 
 			<li><a href="#home"><img class="logo-nav" src="/media/mic-logo-clear.png" alt="logo"></a></li>
 			<li><a href="#about">About</a></li> 
-			<li><a href="#info">Info</a></li> 
+			<!-- <li><a href="#info">Info</a></li>  -->
 			<li><a href="#gallery">Gallery</a></li> 
 			<li><a href="#contact">Contact</a></li> 
 		</div> 
@@ -35,23 +35,18 @@
 		</a>
 	</div>
 
-	<div class="mobile-bg">
-		<div class="video-wrapper" id="home">
-<!-- 			<video autoplay loop poster="/media/bg-vid-img.png" id="bgvid">
-			    <source src="/media/bg-vid.webm" type="video/webm">
-			    <source src="/media/bg-vid.mp4" type="video/mp4">
-			</video> -->
-			<div class="hero col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
-				<img class="logo-hero" src="/media/mic-logo-clear.png" alt="logo">
-				<h1>OneMicNite</h1>
-	    		<h3>NYC's premier artist showcase & open mic jam</h3>
-			</div>
+	<div class="home-bg skew-right" id="home">
+		<div class="hero col-sm-12 anti-skew-right">
+			<img class="logo-hero" src="/media/mic-logo-clear.png" alt="logo"/>
+			<h1>OneMicNite</h1>
+	    	<h3>NYC's premier artist showcase & open mic jam</h3>
 		</div>
+
 	</div>
 
 	<!-- ABOUT -->
-	<div id="about" class="section-container section-container--x-top-pad col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12 skew-right">	
-		<div class="anti-skew-right">
+	<div id="about" class="section-container section-container--x-top-pad col-sm-12">	
+		<div>
 			<h2>About</h2>
 			<p>Founded by award-winning Host and Creator, Marcos Luis, OneMicNite has become a cornerstone within the heart of the New York City's performance art culture. As an Artist who has a knack for assembling the most explosive and dynamic shows, Marcos is a creative force to be reckoned with, and the energy at OneMicNite is proof. 
 			</p>
@@ -59,7 +54,7 @@
 			</p>
 			<p>Since it's beginnings in 2007, OneMicNite made a commitment to give back to the local community through contributions to A Drive For Life, Speaking In Rhythms, Womens Prison Association, The AIDS Walk NYC, and The Breast Cancer Walk.  At OneMicNite, we bring together artists to perform, raise money, and donate their talent for a cause--join us for the best 'Nite' around! 
 			</p> 
-			<p>We have a small backline amplifier and PA system--the rest is up to you!</p>
+			<p>We have a small backline amplifier and PA system.  Our house band, Ruckus, can back you up, or play along--the rest is up to you!</p>
 		</div>
 	</div>
 
@@ -107,72 +102,101 @@
 	    </div>
 	</div>
 
-	<div id="gallery" class="section-container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12 skew-left">
-		<div class="gallery-bg anti-skew-left">
+	<div id="gallery" class="section-container col-sm-12">
+		<div class="gallery-bg">
 			<h2>Gallery</h2>
-		   	<a href="/media/gallery/me-charlie.jpg" title="charlie!" data-gallery>
-		        <img src="/media/gallery/me-charlie-thumb.jpg" alt="charlie">
+		   	<a href="/media/gallery/billy.jpg" title="" data-gallery>
+		        <img src="/media/gallery/billy-thumb.jpg" alt="billy">
 		    </a>
-		    <a href="/media/gallery/sofia.jpg" title="sofia!" data-gallery>
-		        <img src="/media/gallery/sofia-thumb.jpg" alt="sofia">
+		    <a href="/media/gallery/blonde.jpg" title="" data-gallery>
+		        <img src="/media/gallery/blonde-thumb.jpg" alt="blonde">
 		    </a>
-		    <a href="/media/gallery/jacob.jpg" title="jacob!" data-gallery>
-		        <img src="/media/gallery/jacob-thumb.jpg" alt="jacob">
+		    <a href="/media/gallery/coire.jpg" title="" data-gallery>
+		        <img src="/media/gallery/coire-thumb.jpg" alt="coire">
 		    </a>
-		   	<a href="/media/gallery/supercollider.jpg" title="supercollider" data-gallery>
-		        <img src="/media/gallery/supercollider-thumb.jpg" alt="supercollider">
+		   	<a href="/media/gallery/cutie.jpg" title="" data-gallery>
+		        <img src="/media/gallery/cutie-thumb.jpg" alt="cutie">
 		    </a>
-		    <a href="/media/gallery/cheryls.jpg" title="cheryl's w ruckus" data-gallery>
+		    <a href="/media/gallery/drinks.jpg" title="" data-gallery>
+		        <img src="/media/gallery/drinks-thumb.jpg" alt="drinks">
+		    </a>
+		    <a href="/media/gallery/hat.jpg" title="" data-gallery>
+		        <img src="/media/gallery/hat-thumb.jpg" alt="hat">
+		    </a>
+		   	<a href="/media/gallery/nick.jpg" title="" data-gallery>
+		        <img src="/media/gallery/nick-thumb.jpg" alt="ruckus">
+		    </a>
+		    <a href="/media/gallery/red-dress.jpg" title="" data-gallery>
+		        <img src="/media/gallery/red-dress-thumb.jpg" alt="red-dress">
+		    </a>
+		   	<a href="/media/gallery/ruckus.jpg" title="" data-gallery>
+		        <img src="/media/gallery/ruckus-thumb.jpg" alt="ruckus">
+		    </a>
+		    <a href="/media/gallery/braids.jpg" title="" data-gallery>
+		        <img src="/media/gallery/braids-thumb.jpg" alt="braids">
+		    </a>
+		    <a href="/media/gallery/cheryls.jpg" title="" data-gallery>
 		        <img src="/media/gallery/cheryls-thumb.jpg" alt="cheryls">
 		    </a>
-		    <a href="/media/gallery/eventide.jpg" title="work obstruction" data-gallery>
-		        <img src="/media/gallery/eventide-thumb.jpg" alt="work obstruction">
+		    <a href="/media/gallery/crow.jpg" title="" data-gallery>
+		        <img src="/media/gallery/crow-thumb.jpg" alt="crow">
 		    </a>
-		   	<a href="/media/gallery/cl-main.jpg" title="jamming" data-gallery>
-		        <img src="/media/gallery/cl-main-thumb.jpg" alt="jamming">
+		    <a href="/media/gallery/kita.jpg" title="" data-gallery>
+		        <img src="/media/gallery/kita-thumb.jpg" alt="kita">
 		    </a>
-		    <a href="/media/gallery/old-studio.jpg" title="the studio" data-gallery>
-		        <img src="/media/gallery/old-studio-thumb.jpg" alt="studio">
+		    <a href="/media/gallery/pink.jpg" title="" data-gallery>
+		        <img src="/media/gallery/pink-thumb.jpg" alt="pink">
 		    </a>
-		   	<a href="/media/gallery/strat.jpg" title="gear" data-gallery>
-		        <img src="/media/gallery/strat-thumb.jpg" alt="strat">
+		    <a href="/media/gallery/sing.jpg" title="" data-gallery>
+		        <img src="/media/gallery/sing-thumb.jpg" alt="sing">
+		    </a>
+		    <a href="/media/gallery/steph.jpg" title="" data-gallery>
+		        <img src="/media/gallery/steph-thumb.jpg" alt="steph">
+		    </a>
+		    <a href="/media/gallery/telly.jpg" title="" data-gallery>
+		        <img src="/media/gallery/telly-thumb.jpg" alt="telly">
+		    </a>
+		    <a href="/media/gallery/violin.jpg" title="" data-gallery>
+		        <img src="/media/gallery/violin-thumb.jpg" alt="violin">
 		    </a>
 	   	</div>
 	</div>
 	<!-- END GALLERY -->
 
 	<!-- CONTACT -->
-	<div id="contact" class="section-container section-container--x-top-pad col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">		
-		<h2>Contact</h2>
-		<div class="contact-info-container">
-			<p>Tuesday evenings, 7pm at:</p>
-			<h3>Cheryl's Global Soul</h3>
-	        <h4>236 Underhill Avenue, Brooklyn , NY 11238</h4>
-	    </div>
+	<div id="contact" class="section-container skew-left col-sm-12">		
+		<div class="anti-skew-left">
+			<h2>Contact</h2>
+			<div class="contact-info-container">
+				<p>Tuesday evenings, 7pm at:</p>
+				<h3>Cheryl's Global Soul</h3>
+		        <h4>236 Underhill Avenue, Brooklyn , NY 11238</h4>
+		    </div>
 
-	    <div class="social-container">
-    		<h5>follow OneMicNite for updates!</h5>
-    		<ul>
-	        	<li>
-	                <a href="https://www.facebook.com/onemicnite" target="_blank" class="social-icon"><i class="fa fa-facebook-square fa-2x"></i></a>
-	            </li>
-	            <li>
-	                <a href="https://twitter.com/OneMicNite" target="_blank" class="social-icon"><i class="fa fa-twitter-square fa-2x"></i></a>
-	            </li>
-	            <li>
-	                <a href="https://www.youtube.com/user/OneMicNite" target="_blank" class="social-icon"><i class="fa fa-youtube-square fa-2x"></i></a>
-	            </li>
-	             <li>
-	                <a href="https://www.instagram.com/OneMicNite/" target="_blank" class="social-icon"><i class="fa fa-instagram fa-2x"></i></a>
-	            </li>
-	        </ul>
-    	</div>
+		    <div class="social-container">
+	    		<h5>follow OneMicNite for updates!</h5>
+	    		<ul>
+		        	<li>
+		                <a href="https://www.facebook.com/onemicnite" target="_blank" class="social-icon"><i class="fa fa-facebook-square fa-2x"></i></a>
+		            </li>
+		            <li>
+		                <a href="https://twitter.com/OneMicNite" target="_blank" class="social-icon"><i class="fa fa-twitter-square fa-2x"></i></a>
+		            </li>
+		            <li>
+		                <a href="https://www.youtube.com/user/OneMicNite" target="_blank" class="social-icon"><i class="fa fa-youtube-square fa-2x"></i></a>
+		            </li>
+		             <li>
+		                <a href="https://www.instagram.com/OneMicNite/" target="_blank" class="social-icon"><i class="fa fa-instagram fa-2x"></i></a>
+		            </li>
+		        </ul>
+	    	</div>
+	    </div>
 	</div>
 
 	<!-- GOOGLE MAP -->
-	<div id="map"></div>
+<!-- 	<div id="map"></div> -->
 
-    <footer class="footer-container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xlg-12">
+    <footer class="footer-container col-sm-12">
 		<img class="logo" src="/media/mic-logo-clear.png" alt="logo">
 
     	<h5>&copy; 2016 OneMicNight</h5>
@@ -186,8 +210,5 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA"></script>
     <script type="text/javascript" src="/js/maps.js"></script>   
     <script type="text/javascript" src="/js/main.js"></script>
-
-
-
 </body>
 </html>

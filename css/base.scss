@@ -1,6 +1,10 @@
 // FONTS 
 $font-color-light: #fff;
 $font-color-dark: #64110A;
+$font-color-light-orange: #fad4b8;
+$font-color-blue: #1bccf7;
+$font-color-green: #57dbd1;
+
 $color-black: #000;
 $color-white: #fff;
 
@@ -23,9 +27,20 @@ h1, h2, h3, h4, h5, p, a {
 	color: $color-white;
 }
 
-h1, h2, h3, h4, h5, .mobilenav li a {
+h1, h2 {
 	font-family: 'Orbitron', sans-serif;
+}
+
+h3, h4, h5, .mobilenav li a {
+	font-family: 'Playfair Display', serif;
+}
+
+h1, h2 {
 	font-weight: 700;
+}
+
+h3, h4, h5 {
+	font-weight: 400;
 }
 
 .mobilenav li a {
@@ -60,6 +75,12 @@ body {
 
 
 // CONTAINER
+//Bootstrap padding override
+.col-sm-12 {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
 .logo-border-light {
 	@include border-radius(50%);
 	border: solid 3px $border-color-light;

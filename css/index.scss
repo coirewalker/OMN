@@ -1,7 +1,7 @@
 .home-bg {
 	position: relative;
     background: url(/media/bg.jpg) no-repeat;
-    height: 105vh;
+    height: 110vh;
     background-position: center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -43,8 +43,8 @@
 
 // NAV 
 .logo-nav {
-	width: 120px;
-	height: 120px;
+	width: 150px;
+	height: 150px;
 	@extend .logo-border-light;
 }
 
@@ -68,11 +68,13 @@
 
 // GALLERY
 #gallery.section-container {
-	margin-bottom: -80px;
-	padding-bottom: 140px;
-	z-index: 1;
+	padding-top: 80px;
+	z-index: 3;
 	background: url(/media/bg-noise.png) repeat;
 	background-color: #000;
+	h2 {
+		padding-bottom: 20px;
+	}
 }
 
 
@@ -80,19 +82,8 @@
 
 // CONTACT 
 #contact.section-container {
-	// background: 
- //    /* top, transparent red, faked with gradient */ 
- //    linear-gradient(rgba(237, 242, 172, 0.25), 
- //    rgba(5, 250, 136, 0.35)),  
- //    /* bottom image bg */
- //    url(/media/contact-bg.jpg) no-repeat;
- //    background-position: center bottom;
-	// -webkit-background-size: cover;
- //    -moz-background-size: cover;
- //    background-size: cover;
- //    -o-background-size: cover;
  	background: url(/media/bg-noise.png) repeat;
-	background-color: #307651;
+	background-color: #90c2a7;
 	z-index: 2;
 }
 
@@ -149,7 +140,7 @@ footer {
 
 footer.footer-container {
 	padding-top: 125px;
-	padding-bottom: 25px;
+	padding-bottom: 40px;
 	margin-top: -75px;
 	z-index: -1;
 	text-align: center;

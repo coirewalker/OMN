@@ -1,10 +1,10 @@
 h1, h2, h3, h4, h5, p, a {
   color: #fff; }
 
-h1, h2 {
+h1, h2, .mobilenav li a {
   font-family: 'Orbitron', sans-serif; }
 
-h3, h4, h5, .mobilenav li a {
+h3, h4, h5 {
   font-family: 'Playfair Display', serif; }
 
 h1, h2 {
@@ -44,13 +44,10 @@ body {
   border: solid 3px #64110A; }
 
 .section-container {
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 80px;
   text-align: center;
   background-color: #000; }
-
-.section-container--x-top-pad {
-  padding-top: 90px; }
 
 .skew-right {
   transform: skewY(-3deg);

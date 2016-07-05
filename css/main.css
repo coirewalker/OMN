@@ -1,10 +1,10 @@
 h1, h2, h3, h4, h5, p, a {
   color: #fff; }
 
-h1, h2 {
+h1, h2, .mobilenav li a {
   font-family: 'Orbitron', sans-serif; }
 
-h3, h4, h5, .mobilenav li a {
+h3, h4, h5 {
   font-family: 'Playfair Display', serif; }
 
 h1, h2 {
@@ -44,13 +44,10 @@ body {
   border: solid 3px #64110A; }
 
 .section-container {
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 80px;
   text-align: center;
   background-color: #000; }
-
-.section-container--x-top-pad {
-  padding-top: 90px; }
 
 .skew-right {
   transform: skewY(-3deg);
@@ -71,7 +68,7 @@ body {
 .home-bg {
   position: relative;
   background: url(/media/bg.jpg) no-repeat;
-  height: 105vh;
+  height: 110vh;
   background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -92,8 +89,8 @@ body {
     font-size: 40px; }
 
 .logo-nav {
-  width: 120px;
-  height: 120px; }
+  width: 150px;
+  height: 150px; }
 
 #about {
   z-index: -1; }
@@ -103,15 +100,16 @@ body {
   background-color: #08266a; }
 
 #gallery.section-container {
-  margin-bottom: -80px;
-  padding-bottom: 140px;
-  z-index: 1;
+  padding-top: 80px;
+  z-index: 3;
   background: url(/media/bg-noise.png) repeat;
   background-color: #000; }
+  #gallery.section-container h2 {
+    padding-bottom: 20px; }
 
 #contact.section-container {
   background: url(/media/bg-noise.png) repeat;
-  background-color: #307651;
+  background-color: #90c2a7;
   z-index: 2; }
 
 .social-container {
@@ -143,7 +141,7 @@ footer {
 
 footer.footer-container {
   padding-top: 125px;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
   margin-top: -75px;
   z-index: -1;
   text-align: center; }
@@ -274,7 +272,7 @@ footer.footer-container {
   .mobilenav li {
     padding: 13px; }
     .mobilenav li:first-of-type {
-      margin-top: 150px;
+      margin-top: 70px;
       margin-bottom: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

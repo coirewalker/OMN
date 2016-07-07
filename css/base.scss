@@ -8,9 +8,6 @@ $font-color-light-orange: #fad4b8;
 $font-color-blue: #1bccf7;
 $font-color-green: #57dbd1;
 
-$color-black: #000;
-$color-white: #fff;
-
 $border-color-light: #fff;
 $border-color-dark: #64110A;
 
@@ -27,7 +24,7 @@ $bg-color-dark-blue: #04023b;
 $bg-color-dark-gray: #666666;
 
 h1, h2, h3, h4, h5, p, a {
-	color: $color-white;
+	color: #fff;
 }
 
 h1, h2, .mobilenav li a {
@@ -42,26 +39,23 @@ h1, h2 {
 	font-weight: 700;
 }
 
+h2 {
+	margin-top: 0;
+	font-size: 45px;
+}
+
 h3, h4, h5 {
 	font-weight: 400;
 }
 
 .mobilenav li a {
-	color: $color-white;
+	color: #fff;
 }
 
 p {
 	font-family: 'Playfair Display', serif;
 }
 
-h2 {
-	margin-top: 0;
-	font-size: 60px;
-}
-
-body {
-	background-color: $color-black;
-}
 
 
 
@@ -96,10 +90,10 @@ body {
 }
 
 .section-container {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 80px;
+	padding-bottom: 20px;
 	text-align: center;
-	background-color: $color-black;
+	background-color: #000;
 }
 
 .skew-right {

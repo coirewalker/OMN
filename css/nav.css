@@ -125,7 +125,19 @@
   transform: translateX(-50%);
   width: 100%; }
 
+@media (min-width: 568px) {
+  .mobile-nav--inner-wrap {
+    top: -7%; } }
+@media (min-width: 736px) {
+  .mobile-nav--inner-wrap {
+    top: 1%; }
+
+  .mobilenav li a {
+    font-size: 25px; } }
 @media (min-width: 768px) {
+  .mobile-nav--inner-wrap {
+    top: 7%; }
+
   .mobilenav li {
     padding: 13px; }
     .mobilenav li:first-of-type {

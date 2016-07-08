@@ -149,15 +149,27 @@
     width: 100%;
 }
 
-
-// NAV MENU RESIZE
 @media (min-width: 568px) {
-	.mobilenav li a {
+	.mobile-nav--inner-wrap {
+	    top: -7%;
 	}
 }
 
+@media (min-width: 736px) {
+	.mobile-nav--inner-wrap {
+	    top: 1%;
+	}
+	.mobilenav li a {
+		font-size: 25px
+	}
+}
+
+
 // iPAD BURGER RESIZE 
 @media (min-width: 768px) {
+	.mobile-nav--inner-wrap {
+	    top: 7%;
+	}
 	.mobilenav li {
 		padding: 13px;
 		&:first-of-type {

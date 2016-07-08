@@ -14,7 +14,7 @@
 
 .hero {
 	position: absolute;
-    bottom: 26%;
+    top: 44%;
     transform: translateX(-50%);
     width: 100%;
 	text-align: center;	
@@ -34,12 +34,21 @@
 	}
 }
 
+@media (min-width: 568px) {
+	.hero {
+		top: 31%;
+	}
+}
+
 @media (min-width: 768px) {
 	.hero {
+		top: 61%;
 		h1 {
+			font-size: 60px;
 			margin-bottom: 0;
 		}
 		h3 {
+			font-size: 27px;
 			margin-top: 0;
 		}
 	}
@@ -69,6 +78,12 @@
 	border: 3px solid #D8FFD0;
 }
 
+@media (min-width: 768px) {
+	.logo-nav {
+		width: 125px;
+		height: 125px;
+	}
+}
 
 
 

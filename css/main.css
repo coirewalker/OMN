@@ -347,7 +347,7 @@ footer.section-container {
 
 .mobile-nav--inner-wrap {
   position: absolute;
-  top: 5%;
+  top: 3.5%;
   left: 50%;
   transform: translateX(-50%);
   width: 100%; }

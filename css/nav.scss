@@ -4,7 +4,7 @@
 }
 
 .top-animate {
-	background: #fff !important;
+	background: #D8FFD0 !important;
 	top: 13px !important;
 	-webkit-transform: rotate(45deg);
 	/* Chrome, Safari, Opera */
@@ -14,7 +14,7 @@
 .mid-animate { opacity: 0; }
 
 .bottom-animate {
-	background: #fff !important;
+	background: #D8FFD0 !important;
 	top: 13px !important;
 	-webkit-transform: rotate(-225deg);
 	/* Chrome, Safari, Opera */
@@ -122,7 +122,7 @@
 
 .mobilenav li a {
 	font-size: 50px;
-	color: #fff;
+	color: #D8FFD0;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -132,7 +132,7 @@
 	-webkit-transition:.5s;
 	transition:.5s;
   &:hover, &:active {
-  		color: #000;
+  		color: #fff;
   }
 }
 
@@ -140,11 +140,18 @@
 	margin-top: 15px; 
 }
 
+
+
+
+// NAV MENU RESIZE
+@media (min-width: 568px) {
+	.mobilenav li a {
+		font-size: 37px;
+	}
+}
+
 // iPAD BURGER RESIZE 
 @media (min-width: 768px) {
-	.mobilenav li a {
-		font-size: 33px;
-	}
 	.mobilenav li {
 		padding: 13px;
 		&:first-of-type {
@@ -153,5 +160,12 @@
 		}
 	}
 }
+
+@media (min-width: 568px) {
+	.mobilenav li:first-of-type {
+		margin-top: 40px;
+	}
+}
+
 
 

@@ -63,9 +63,10 @@
 
 // NAV 
 .logo-nav {
-	width: 150px;
-	height: 150px;
-	@extend .logo-border-light;
+	width: 200px;
+	height: 200px;
+	@include border-radius(50%);
+	border: 3px solid #D8FFD0;
 }
 
 
@@ -165,7 +166,7 @@ footer {
 	background-color: #000;
 	border-top: solid 3px #bebebe;
     box-shadow: 0px -15px 20px -14px #5D5D5D;
-	p, h5, a {
+	p, h5 {
 		color: #bebebe;
 		font-family: 'Orbitron', sans-serif;
 	}
@@ -182,7 +183,6 @@ footer.section-container {
 }
 
 .social-container {
-
 	padding-top: 25px;
 	ul {
 		padding-left: 0;
@@ -192,8 +192,42 @@ footer.section-container {
 		list-style: none;
 		padding: 0 5px;
 	}
-	a, p {
-		color: #fff;
+	a {
+	}
+	.fa-facebook-square {
+		transition: color .6s ease;
+		color: #fe374d;
+		&:hover {
+			color: #ef6d7c;
+		}
+	}
+	.fa-twitter-square {
+		transition: color .6s ease;
+		color: #00c8ff;
+		&:hover {
+			color: #93FFFE;
+		}
+	}
+	.fa-youtube-square {
+		transition: color .6s ease;
+		color: #FF1EB7;
+		&:hover {
+			color: #ff89f8;
+		}
+	}
+	.fa-instagram {
+		transition: color .6s ease;
+		color: #68ffda;
+		&:hover {
+			color: #D8FFD0;
+		}
+	}
+}
+
+.badge-cw {
+	transition: color .6s ease;
+	&:hover {
+		color: #FFEB64;
 	}
 }
 

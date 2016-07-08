@@ -15,6 +15,7 @@ h1, h2 {
 
 h2 {
   margin-top: 0;
+  margin-bottom: 20px;
   font-size: 45px; }
 
 h3, h4, h5 {
@@ -24,7 +25,8 @@ h3, h4, h5 {
   color: #fff; }
 
 p {
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px; }
 
 .col-sm-12 {
   padding-left: 25px;

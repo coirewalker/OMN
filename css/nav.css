@@ -4,7 +4,7 @@
   /* For some Androids */ }
 
 .top-animate {
-  background: #fff !important;
+  background: #D8FFD0 !important;
   top: 13px !important;
   -webkit-transform: rotate(45deg);
   /* Chrome, Safari, Opera */
@@ -14,7 +14,7 @@
   opacity: 0; }
 
 .bottom-animate {
-  background: #fff !important;
+  background: #D8FFD0 !important;
   top: 13px !important;
   -webkit-transform: rotate(-225deg);
   /* Chrome, Safari, Opera */
@@ -102,7 +102,7 @@
 
 .mobilenav li a {
   font-size: 50px;
-  color: #fff;
+  color: #D8FFD0;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -112,19 +112,22 @@
   -webkit-transition: .5s;
   transition: .5s; }
   .mobilenav li a:hover, .mobilenav li a:active {
-    color: #000; }
+    color: #fff; }
 
 .mobilenav li:first-child {
   margin-top: 15px; }
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
   .mobilenav li a {
-    font-size: 33px; }
-
+    font-size: 37px; } }
+@media (min-width: 768px) {
   .mobilenav li {
     padding: 13px; }
     .mobilenav li:first-of-type {
       margin-top: 70px;
       margin-bottom: 20px; } }
+@media (min-width: 568px) {
+  .mobilenav li:first-of-type {
+    margin-top: 40px; } }
 
 /*# sourceMappingURL=nav.css.map */

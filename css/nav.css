@@ -96,17 +96,18 @@
   opacity: 1; }
 
 .mobilenav li {
+  width: 100%;
   list-style-type: none;
   text-align: center;
-  padding: 10px; }
+  padding: 13px; }
 
 .mobilenav li a {
-  font-size: 50px;
   color: #D8FFD0;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
   width: 100%;
+  font-size: 20px;
   -ms-transition: .5s;
   -moz-transition: .5s;
   -webkit-transition: .5s;
@@ -117,9 +118,13 @@
 .mobilenav li:first-child {
   margin-top: 15px; }
 
-@media (min-width: 568px) {
-  .mobilenav li a {
-    font-size: 37px; } }
+.mobile-nav--inner-wrap {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; }
+
 @media (min-width: 768px) {
   .mobilenav li {
     padding: 13px; }

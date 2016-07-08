@@ -38,12 +38,16 @@ h3, h4, h5 {
 
 h1, h2 {
 	font-weight: 700;
+	font-size: 40px;
 }
 
 h2 {
 	margin-top: 0;
 	margin-bottom: 20px;
-	font-size: 45px;
+}
+
+h3 {
+	font-size: 20px;
 }
 
 h3, h4, h5 {
@@ -106,8 +110,8 @@ p {
 }
 
 .anti-skew-right {
-	transform: skewY(3deg);
-	transform-origin: 100% 0;
+	transform: skewY(3deg) !important;
+	transform-origin: 100% 0 !important;
 }
 
 .skew-left {

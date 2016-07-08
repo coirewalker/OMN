@@ -9,6 +9,7 @@
     -o-background-size: cover;
     //remove top margin
 	margin-top: -55px;
+	border-bottom: solid 3px #bebebe;
 }
 
 .hero {
@@ -25,8 +26,8 @@
 		text-shadow: 1px 1px 12px #000;
 	}
 	.logo-hero {
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
 		@extend .logo-border-light;
 	}
 }
@@ -35,26 +36,26 @@
 	.hero {
 		bottom: 13%;
 		h1 {
-			font-size: 70px;
+			font-size: 50px;
 			margin-bottom: 0;
 		}
 		h3 {
 			margin-top: 0;
-			font-size: 33px;
-		}
-	}
-}
-
-@media (min-width: 1024px) {
-	.hero {
-		h1 {
-			font-size: 50px;
-		}
-		h3 {
 			font-size: 25px;
 		}
 	}
 }
+
+// @media (min-width: 1024px) {
+// 	.hero {
+// 		h1 {
+// 			font-size: 50px;
+// 		}
+// 		h3 {
+// 			font-size: 25px;
+// 		}
+// 	}
+// }
 
 
 
@@ -63,8 +64,8 @@
 
 // NAV 
 .logo-nav {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	@include border-radius(50%);
 	border: 3px solid #D8FFD0;
 }
@@ -76,6 +77,9 @@
 // ABOUT 
 #about {
 	z-index: -1;
+	h2 {
+		color: #fffed0;
+	}
 }
 
 #about.section-container {
@@ -89,6 +93,10 @@
 
 
 // GALLERY
+#gallery h2 {
+	color: #f8aeef; 
+}
+
 #gallery.section-container {
 	z-index: 3;
 	// background: url(/media/bg-noise.png) repeat;
@@ -100,6 +108,10 @@
 
 
 // CONTACT 
+#contact h2 {
+	color: #6e87e1;
+}
+
 #contact.section-container {
  	// background: url(/media/bg-noise.png) repeat;
 	// background-color: rgba(23, 146, 158, 0.9);
@@ -177,8 +189,8 @@ footer.section-container {
 }
 
 .logo-footer {
-	width: 100px;
-	height: 100px;
+	width: 75px;
+	height: 75px;
 	border: solid 3px #bebebe;
 }
 
@@ -198,7 +210,7 @@ footer.section-container {
 		transition: color .6s ease;
 		color: #fe374d;
 		&:hover {
-			color: #ef6d7c;
+			color: #EFC4C6;
 		}
 	}
 	.fa-twitter-square {
@@ -212,7 +224,7 @@ footer.section-container {
 		transition: color .6s ease;
 		color: #FF1EB7;
 		&:hover {
-			color: #ff89f8;
+			color: #E5BAFF;
 		}
 	}
 	.fa-instagram {

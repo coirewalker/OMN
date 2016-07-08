@@ -29,6 +29,8 @@
 		width: 150px;
 		height: 150px;
 		@extend .logo-border-light;
+		box-shadow: 0px 0px 2px #000;
+
 	}
 }
 
@@ -94,7 +96,7 @@
 
 // GALLERY
 #gallery h2 {
-	color: #f8aeef; 
+	color: #99ffd3; 
 }
 
 #gallery.section-container {
@@ -171,8 +173,8 @@
 // FOOTER
 
 footer {
-	// background: url(/media/broken-noise.png) repeat;
-	padding-bottom: 40px;
+	padding-bottom: 140px;
+	padding-bottom: -100px;
 	text-align: center;
 	margin-top: -75px;
 	background-color: #000;
@@ -237,9 +239,16 @@ footer.section-container {
 }
 
 .badge-cw {
+	font-size: 12px;
+	color: #fff;
+}
+
+.badge-cw--a, .one-mic-tv {
+	color: #93FFFE;
 	transition: color .6s ease;
 	&:hover {
-		color: #FFEB64;
+		color: #D8FFD0;
+		text-decoration: none;
 	}
 }
 

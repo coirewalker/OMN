@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'border-radius'.
-        on line 83 of css/index.scss, in `border-radius'
-        from line 83 of css/index.scss
+        on line 71 of css/index.scss, in `border-radius'
+        from line 71 of css/index.scss
 
-78: 
-79: // NAV 
-80: .logo-nav {
-81: 	width: 100px;
-82: 	height: 100px;
-83: 	@include border-radius(50%);
-84: 	border: 3px solid #D8FFD0;
-85: }
-86: 
-87: @media (min-width: 768px) {
-88: 	.logo-nav {
+66: 
+67: // NAV 
+68: .logo-nav {
+69: 	width: 100px;
+70: 	height: 100px;
+71: 	@include border-radius(50%);
+72: 	border: 3px solid #D8FFD0;
+73: }
+74: 
+75: @media (min-width: 768px) {
+76: 	.logo-nav {
 
 Backtrace:
-css/index.scss:83:in `border-radius'
-css/index.scss:83
+css/index.scss:71:in `border-radius'
+css/index.scss:71
 /Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
 /Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
@@ -72,4 +72,4 @@ css/index.scss:83
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'border-radius'.\A         on line 83 of css/index.scss, in `border-radius'\A         from line 83 of css/index.scss\A \A 78: \A 79: // NAV \A 80: .logo-nav {\A 81: 	width: 100px;\A 82: 	height: 100px;\A 83: 	@include border-radius(50%);\A 84: 	border: 3px solid #D8FFD0;\A 85: }\A 86: \A 87: @media (min-width: 768px) {\A 88: 	.logo-nav {"; }
+  content: "Error: Undefined mixin 'border-radius'.\A         on line 71 of css/index.scss, in `border-radius'\A         from line 71 of css/index.scss\A \A 66: \A 67: // NAV \A 68: .logo-nav {\A 69: 	width: 100px;\A 70: 	height: 100px;\A 71: 	@include border-radius(50%);\A 72: 	border: 3px solid #D8FFD0;\A 73: }\A 74: \A 75: @media (min-width: 768px) {\A 76: 	.logo-nav {"; }

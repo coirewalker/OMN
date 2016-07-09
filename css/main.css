@@ -5,10 +5,10 @@ body {
 h1, h2, h3, h4, h5, p, a {
   color: #fff; }
 
-h1, h2, .mobilenav li a {
+h1, h2, .mobilenav li a, .footer p, .footer h5 {
   font-family: 'Orbitron', sans-serif; }
 
-h3, h4, h5 {
+h3, h4, h5, p.copyright {
   font-family: 'Playfair Display', serif; }
 
 h1, h2 {
@@ -254,11 +254,12 @@ p {
   border-top: solid 3px #bebebe;
   box-shadow: 0px -15px 20px -14px #5D5D5D; }
   .footer p, .footer h5 {
-    color: #bebebe;
-    font-family: 'Orbitron', sans-serif; }
+    color: #bebebe; }
 
 .footer.section-container {
   padding-bottom: 0; }
+  .footer.section-container h3 {
+    margin: 10px 0 0 0; }
 
 .logo-footer {
   width: 75px;
@@ -266,7 +267,11 @@ p {
   border: solid 3px #bebebe; }
 
 .social-container {
-  padding-top: 25px; }
+  padding-top: 25px;
+  margin-bottom: 20px; }
+  .social-container p {
+    margin-bottom: 0;
+    font-size: 15px; }
   .social-container ul {
     padding-left: 0; }
   .social-container li {
@@ -296,7 +301,8 @@ p {
 
 .badge-cw {
   font-size: 12px;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 5px; }
 
 .badge-cw--a, .one-mic-tv {
   color: #93FFFE;
@@ -304,6 +310,9 @@ p {
   .badge-cw--a:hover, .one-mic-tv:hover {
     color: #D8FFD0;
     text-decoration: none; }
+
+.copyright {
+  font-size: 10px; }
 
 * {
   -webkit-tap-highlight-color: transparent;
@@ -409,7 +418,6 @@ p {
   padding: 13px; }
 
 .mobilenav li a {
-  color: #D8FFD0;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -453,5 +461,13 @@ p {
 @media (min-width: 568px) {
   .mobilenav li:first-of-type {
     margin-top: 40px; } }
+.mobilenav li:nth-of-type(2) a {
+  color: #fffed0; }
+
+.mobilenav li:nth-of-type(3) a {
+  color: #99ffd3; }
+
+.mobilenav li:nth-of-type(4) a {
+  color: #6e87e1; }
 
 /*# sourceMappingURL=main.css.map */

@@ -31,6 +31,16 @@ $(document).ready(function() {
 		});;
 	});
 
+	// pause arrow animation on scroll
+	$(window).scroll(function() {
+		var scroll_top = $(this).scrollTop();
+		if (scroll_top >= 1) {
+			$('.btn-circle i').removeClass('animated');
+		} else {
+			$('.btn-circle i').addClass('animated');
+		}
+	});
+
 	// //CHANGE BURGER COLOR ON SCROLL 
  //    var $win = $(window);
  //    var winH = $win.height();

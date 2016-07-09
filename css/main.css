@@ -73,6 +73,64 @@ p {
   transform: skewY(-3deg);
   transform-origin: 100% 0; }
 
+.btn-circle {
+  display: none;
+  position: absolute;
+  top: 86vh;
+  width: 100%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
+  font-size: 65px;
+  color: white;
+  background: 0 0;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out; }
+  .btn-circle:hover {
+    cursor: default;
+    color: rgba(255, 255, 255, 0.9); }
+
+@media (min-width: 1024px) {
+  .btn-circle {
+    display: block; } }
+.btn:active {
+  box-shadow: none; }
+
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear; }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -moz-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1); } }
 .home-bg {
   position: relative;
   background: url(/media/bg.jpg) no-repeat;
@@ -87,7 +145,7 @@ p {
 
 .hero {
   position: absolute;
-  top: 30%;
+  top: 59vh;
   transform: translateX(-50%);
   width: 100%;
   text-align: center; }
@@ -103,16 +161,19 @@ p {
 
 @media (min-width: 568px) {
   .hero {
-    top: 31%; } }
+    top: 45vh; } }
 @media (min-width: 768px) {
   .hero {
-    top: 61%; }
+    top: 71vh; }
     .hero h1 {
       font-size: 60px;
       margin-bottom: 0; }
     .hero h3 {
       font-size: 27px;
       margin-top: 0; } }
+@media (min-width: 1024px) {
+  .hero {
+    top: 54vh; } }
 .logo-nav {
   width: 100px;
   height: 100px;

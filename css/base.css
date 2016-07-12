@@ -33,6 +33,9 @@ p {
   margin-bottom: 30px;
   font-size: 18px; }
 
+a:visited {
+  color: #93FFFE; }
+
 .col-sm-12 {
   padding-left: 25px;
   padding-right: 25px; }

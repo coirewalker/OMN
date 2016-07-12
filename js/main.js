@@ -24,7 +24,7 @@ $(document).ready(function() {
 	    var $target = $(target);
 
 	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
+	        'scrollTop': $target.offset().top +42
 	    }, 600, 'swing', function () {
 		    if(history.pushState) history.pushState(null,null,target);
 				else location.hash = target;
@@ -36,8 +36,10 @@ $(document).ready(function() {
 		var scroll_top = $(this).scrollTop();
 		if (scroll_top >= 1) {
 			$('.btn-circle i').removeClass('animated');
+			$('.btn-circle').css("opacity", ".6");
 		} else {
 			$('.btn-circle i').addClass('animated');
+			$('.btn-circle').css("opacity", "1");
 		}
 	});
 

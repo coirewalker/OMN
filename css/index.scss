@@ -18,6 +18,14 @@
     transform: translateX(-50%);
     width: 100%;
 	text-align: center;	
+	.trademark {
+		h1, h4 {
+			display: inline;
+		}
+		h4 {
+			margin-top: -20px;
+		}
+	}
 	h1 {
 		text-shadow: 1px 1px 12px #000;
 	}

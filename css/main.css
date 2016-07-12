@@ -33,6 +33,9 @@ p {
   margin-bottom: 30px;
   font-size: 18px; }
 
+a:visited {
+  color: #93FFFE; }
+
 .col-sm-12 {
   padding-left: 25px;
   padding-right: 25px; }
@@ -133,7 +136,7 @@ p {
     transform: scale(1); } }
 .home-bg {
   position: relative;
-  background: url(/media/bg.jpg) no-repeat;
+  background: url(/media/bg-1.jpg) no-repeat;
   height: 120vh;
   background-position: center top;
   -webkit-background-size: cover;
@@ -149,6 +152,10 @@ p {
   transform: translateX(-50%);
   width: 100%;
   text-align: center; }
+  .hero .trademark h1, .hero .trademark h4 {
+    display: inline; }
+  .hero .trademark h4 {
+    margin-top: -20px; }
   .hero h1 {
     text-shadow: 1px 1px 12px #000; }
   .hero h3 {

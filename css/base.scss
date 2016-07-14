@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, p, a {
 	color: #fff;
 }
 
-h1, h2, .mobilenav li a, .footer p, .footer h5 {
+h1, h2, .mobilenav li a, .footer p, .footer h5, .omn-artists a {
 	font-family: 'Orbitron', sans-serif;
 }
 
@@ -150,7 +150,7 @@ a:visited {
     transition: background .3s ease-in-out;
     &:hover {
     	cursor: default;
-    	color: rgba(255,255,255,.9);
+    	color: rgba(255,255,255,1);
     }
 }
 

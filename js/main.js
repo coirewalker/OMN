@@ -44,16 +44,16 @@ $(document).ready(function() {
 	});
 
 	// //CHANGE BURGER COLOR ON SCROLL 
- //    var $win = $(window);
- //    var winH = $win.height();
+    var $win = $(window);
+    var winH = $win.height();
 
-	// $win.on('scroll', function() {
-	// 	if ($(this).scrollTop() > winH) {
-	// 		$('.menui').css({"background": "#CFCFCF"});
-	// 	} else {
-	// 		$('.menui').css({"background": "#F1F3F2"});
-	// 	}
-	// }).on('resize', function() {
-	// 	winH = $(this).height();
-	// });
+	$win.on('scroll', function() {
+		if ($(this).scrollTop() > winH) {
+			$('.menui').css({"background": "#CFCFCF"});
+		} else {
+			$('.menui').css({"background": "#F1F3F2"});
+		}
+	}).on('resize', function() {
+		winH = $(this).height();
+	});
 });

@@ -177,6 +177,17 @@
 	padding-right: 0;
 }
 
+.email-link {
+	a {
+		color: #93FFFE;
+		transition: color .6s ease;
+		&:hover {
+			color: #D8FFD0;
+			text-decoration: none;
+		}
+	}
+}
+
 
 .logo {
 	width: 80px;

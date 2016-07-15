@@ -2,28 +2,11 @@
 body {
 	background-color: #000;
 	position: relative;
+	z-index: -2;
 }
-
-$font-color-light: #fff;
-$font-color-dark: #64110A;
-$font-color-light-orange: #fad4b8;
-$font-color-blue: #1bccf7;
-$font-color-green: #57dbd1;
 
 $border-color-light: #fff;
 $border-color-dark: #64110A;
-
-$bg-color-brown: #64110A;
-$bg-color-tan: #d9b377;
-$bg-color-red: #f65a54;
-$bg-color-olive: #c0ba35;
-$bg-color-orange: #f0a022;
-
-$bg-color-yellow: #fed649;
-$bg-color-blue: #60d0d5;
-$bg-color-light-blue: #d9edf7;
-$bg-color-dark-blue: #04023b;
-$bg-color-dark-gray: #666666;
 
 h1, h2, h3, h4, h5, p, a {
 	color: #fff;

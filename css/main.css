@@ -227,7 +227,8 @@ a:visited {
   background-color: #000; }
 
 #contact h2 {
-  color: #6e87e1; }
+  color: #6e87e1;
+  margin-bottom: 0; }
 
 #contact.section-container {
   background: url(/media/broken-noise.png) repeat;
@@ -243,7 +244,8 @@ a:visited {
   .contact-info-container h3 {
     padding: 0;
     font-family: 'Orbitron', sans-serif;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: #fe374d; }
   .contact-info-container p {
     padding: 0;
     margin-bottom: 0; }
@@ -254,6 +256,10 @@ a:visited {
   padding-left: 0;
   padding-right: 0; }
 
+.email-link h4 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 16.5px; }
 .email-link a {
   color: #93FFFE;
   transition: color .6s ease; }
@@ -264,6 +270,11 @@ a:visited {
 .logo {
   width: 80px;
   height: 80px; }
+
+.bg-live-on-air {
+  height: 60px;
+  width: auto;
+  margin: 10px 0; }
 
 #map {
   width: 100%;
@@ -338,8 +349,9 @@ a:visited {
     color: #D8FFD0;
     text-decoration: none; }
 
-.copyright {
-  font-size: 10px; }
+p.copyright {
+  font-size: 10px;
+  color: #fffed0; }
 
 * {
   -webkit-tap-highlight-color: transparent;

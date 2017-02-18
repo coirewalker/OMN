@@ -144,6 +144,7 @@
 // CONTACT 
 #contact h2 {
 	color: #6e87e1;
+	margin-bottom: 0;
 }
 
 #contact.section-container {
@@ -162,6 +163,7 @@
 		padding: 0;
 		font-family: 'Orbitron', sans-serif;
 		margin-bottom: 0;
+		color: #fe374d;
 	}
 	p {
 		padding: 0;
@@ -178,6 +180,11 @@
 }
 
 .email-link {
+	h4 {
+		margin-top: 0;
+		margin-bottom: 25px;
+		font-size: 16.5px;
+	}
 	a {
 		color: #93FFFE;
 		transition: color .6s ease;
@@ -188,14 +195,17 @@
 	}
 }
 
-
 .logo {
 	width: 80px;
 	height: 80px;
 	@extend .logo-border-light;
 }
 
-
+.bg-live-on-air {
+	height: 60px;
+	width: auto;
+	margin: 10px 0;
+}
 
 
 
@@ -301,7 +311,22 @@
 	}
 }
 
-.copyright {
+p.copyright {
 	font-size: 10px;
+	color: #fffed0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

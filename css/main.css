@@ -309,7 +309,7 @@ a:visited {
   margin-bottom: 20px; }
   .social-container p {
     margin-bottom: 0;
-    font-size: 15px; }
+    font-size: 12.5px; }
   .social-container ul {
     padding-left: 0; }
   .social-container li {
@@ -338,7 +338,7 @@ a:visited {
       color: #D8FFD0; }
 
 .badge-cw {
-  font-size: 12px;
+  font-size: 11px;
   color: #fff;
   margin-bottom: 5px; }
 
